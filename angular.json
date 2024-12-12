@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MesProduits_Fin_Atelier_03": {
+    "MesProduits_Fin_Atelier_02": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/mes-produits-fin-atelier-03",
+            "outputPath": "dist/mes-produits-fin-atelier-02",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -27,9 +27,13 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -59,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "MesProduits_Fin_Atelier_03:build:production"
+              "buildTarget": "MesProduits_Fin_Atelier_02:build:production"
             },
             "development": {
-              "buildTarget": "MesProduits_Fin_Atelier_03:build:development"
+              "buildTarget": "MesProduits_Fin_Atelier_02:build:development"
             }
           },
           "defaultConfiguration": "development"
